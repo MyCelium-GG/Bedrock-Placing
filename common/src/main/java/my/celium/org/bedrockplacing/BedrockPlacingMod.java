@@ -43,6 +43,8 @@ public final class BedrockPlacingMod {
 
     public static final ModMetadata META = ModMetadata.builder(ID, "BedrockPlacing", "1.0.0")
             .author("MyCelium")
+            .website("https://www.curseforge.com/minecraft/mc-mods/bedrock-placing")
+            .updateUrl("https://wiki.mycelium-gg.org/updates/bedrockplacing.json")
             .build();
 
     public static ConfigValue<Boolean> enabled;
