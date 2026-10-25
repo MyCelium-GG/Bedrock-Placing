@@ -1,6 +1,7 @@
 package my.celium.org.bedrockplacing.fabric;
 
 import my.celium.org.bedrockplacing.client.BedrockPlacingClient;
+import my.celium.org.fabric.FabricNetworking;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 
@@ -11,9 +12,7 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 public final class BedrockPlacingFabricClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        // Idempotent: the main entrypoint already registered on integrated
-        // servers/clients; the guard makes the second call a no-op.
-        BedrockPlacingFabricNetworking.registerAssist();
+        FabricNetworking.flushClient();
         ClientTickEvents.END_CLIENT_TICK.register(BedrockPlacingClient::clientTick);
     }
 }

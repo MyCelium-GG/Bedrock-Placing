@@ -152,6 +152,10 @@ public final class BedrockPlacingClient {
         if (player == null || level == null || minecraft.gui.screen() != null) {
             return null;
         }
+        // No outline for a server that could not act on it (vanilla or without the mod).
+        if (!MycelNetwork.canSendToServer(BedrockPlacingMod.assistPacket)) {
+            return null;
+        }
         HitResult hit = minecraft.hitResult;
         if (hit == null || hit.getType() != HitResult.Type.MISS) {
             // Vanilla handles aimed-at blocks itself; only preview air clicks.

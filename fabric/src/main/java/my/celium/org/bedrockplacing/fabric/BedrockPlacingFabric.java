@@ -1,6 +1,7 @@
 package my.celium.org.bedrockplacing.fabric;
 
 import my.celium.org.bedrockplacing.BedrockPlacingMod;
+import my.celium.org.fabric.FabricNetworking;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
 
@@ -13,7 +14,8 @@ public final class BedrockPlacingFabric implements ModInitializer {
     @Override
     public void onInitialize() {
         BedrockPlacingMod.init();
-        BedrockPlacingFabricNetworking.registerAssist();
+        // The packet may be registered after Mycel's own entrypoint ran.
+        FabricNetworking.flush();
         UseItemCallback.EVENT.register(
                 (player, level, hand) -> BedrockPlacingMod.onRightClickAir(player, level, hand));
     }

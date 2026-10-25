@@ -12,7 +12,7 @@ import org.junit.jupiter.api.io.TempDir;
 
 import io.netty.buffer.Unpooled;
 import my.celium.org.Mycel;
-import my.celium.org.internal.PlatformHolder;
+import my.celium.org.testing.MycelTesting;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.InteractionResult;
 
@@ -20,7 +20,7 @@ import net.minecraft.world.InteractionResult;
 class BedrockPlacingModTest {
     @BeforeAll
     static void initOnce(@TempDir Path tempDir) {
-        PlatformHolder.setForTesting(new BedrockPlacingTestPlatform(tempDir));
+        MycelTesting.useConfigDir(tempDir);
         BedrockPlacingMod.init();
     }
 

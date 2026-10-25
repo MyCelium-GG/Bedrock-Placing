@@ -10,7 +10,6 @@ import my.celium.org.config.MycelConfig;
 import my.celium.org.metadata.ModMetadata;
 import my.celium.org.network.MycelNetwork;
 import my.celium.org.network.PacketDefinition;
-import my.celium.org.platform.Platform;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -41,7 +40,7 @@ import net.minecraft.world.level.Level;
 public final class BedrockPlacingMod {
     public static final String ID = "bedrockplacing";
 
-    public static final ModMetadata META = ModMetadata.builder(ID, "BedrockPlacing", "1.0.1")
+    public static final ModMetadata META = ModMetadata.builder(ID, "BedrockPlacing", "1.0.2")
             .author("MyCelium")
             .website("https://www.curseforge.com/minecraft/mc-mods/bedrock-placing")
             .updateUrl("https://wiki.mycelium-gg.org/updates/bedrockplacing.json")
@@ -95,14 +94,9 @@ public final class BedrockPlacingMod {
                                 packet.offhand() ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND);
                     }
                 });
-        if (Mycel.getPlatform() != Platform.FABRIC) {
-            // Forge/NeoForge wire MycelNetwork definitions automatically with
-            // idempotent guards. Fabric is wired manually in the mod's fabric
-            // module: Mycel 1.2.1's FabricNetworking re-registers serverbound
-            // types on flushClient() without a guard, which crashes the client
-            // with "already registered" as soon as any TO_SERVER packet exists.
-            MycelNetwork.register(META, assistPacket);
-        }
+        // Optional on every loader (Mycel 1.4.0+): on a server without the
+        // mod the client simply never sends it.
+        MycelNetwork.register(META, assistPacket);
     }
 
     public static boolean isModEnabled() {

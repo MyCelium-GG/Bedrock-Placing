@@ -6,6 +6,20 @@ BedrockPlacing is versioned semantically (`MAJOR.MINOR.PATCH`).
 It runs on Minecraft 26.3 (Fabric + Forge + NeoForge, Java 25) and requires
 [Mycel](https://github.com/MyCelium-GG/MyCel-Lib) (`my.celium.org`).
 
+## [1.0.2] - 2026-10-25
+
+### Changed
+
+- Requires Mycel 1.4.0. Operators now get one chat line per session when a
+  MyCelium mod has an update, and `/mycel mods` marks it.
+
+### Fixed
+
+- Players with the mod can join servers without it (and the other way round)
+  on every loader. On NeoForge and Forge the channel used to be required.
+  On a server without the mod the client shows no outline and places blocks
+  the vanilla way.
+
 ## [1.0.1] - 2026-10-19
 
 ### Changed
