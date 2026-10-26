@@ -6,6 +6,16 @@ BedrockPlacing is versioned semantically (`MAJOR.MINOR.PATCH`).
 It runs on Minecraft 26.3 (Fabric + Forge + NeoForge, Java 25) and requires
 [Mycel](https://github.com/MyCelium-GG/MyCel-Lib) (`my.celium.org`).
 
+## [1.0.3] - 2026-10-26
+
+### Added
+
+- An icon in the mod list on Fabric, Forge and NeoForge.
+
+### Changed
+
+- Requires Mycel 1.4.1.
+
 ## [1.0.2] - 2026-10-25
 
 ### Changed
