@@ -7,5 +7,5 @@ white preview outline and fast bridging while held.
 - Server-authoritative placement through vanilla's own path (stairs orient, waterlogging works)
 - Config: `enabled`, `sneakDisables`, `requireSupport`, `reach`, `preview`, `repeatTicks`
 
-Requires **Mycel**. Needs NeoForge 26.3.0.1-beta+, Minecraft 26.3, Java 25.
+Requires **Mycel**. Needs NeoForge, Minecraft 26.3, 26.2 or 26.1.2, Java 25.
 MIT license.

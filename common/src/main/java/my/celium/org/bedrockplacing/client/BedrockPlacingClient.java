@@ -6,6 +6,7 @@ import my.celium.org.bedrockplacing.AssistPlacePacket;
 import my.celium.org.bedrockplacing.BedrockPlacingBrain;
 import my.celium.org.bedrockplacing.BedrockPlacingMod;
 import my.celium.org.bedrockplacing.LayerLock;
+import my.celium.org.client.MycelScreens;
 import my.celium.org.logging.MycelLog;
 import my.celium.org.network.MycelNetwork;
 import net.minecraft.client.Minecraft;
@@ -149,7 +150,7 @@ public final class BedrockPlacingClient {
         }
         LocalPlayer player = minecraft.player;
         ClientLevel level = minecraft.level;
-        if (player == null || level == null || minecraft.gui.screen() != null) {
+        if (player == null || level == null || MycelScreens.current() != null) {
             return null;
         }
         // No outline for a server that could not act on it (vanilla or without the mod).
