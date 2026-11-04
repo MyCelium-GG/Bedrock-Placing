@@ -273,6 +273,7 @@ public final class BedrockPlacingBrain {
         // No server-side swing: the clicking client already predicted its own
         // arm swing when right-clicking, and other viewers see the new block.
         player.awardStat(Stats.ITEM_USED.get(stack.getItem()));
+        PlacingStats.placed(block);
         return true;
     }
 

@@ -46,6 +46,13 @@ and diagnostics are reused.
 - Never places into the cells your own body occupies; dead, removed and
   spectator players place nothing.
 
+## Anonymous stats
+
+Bedrock Placing sends anonymous stats (how many blocks get bridged, with which blocks, the settings, and errors in its own code) to its FastStats project through
+Mycel. It follows Mycel's choice exactly: the one-time screen in your own
+game, `shareStats` / `shareErrors` in `config/mycel.json` on servers.
+Details: https://wiki.mycelium-gg.org/privacy#stats-bedrockplacing
+
 ## Configuration (`config/bedrockplacing.json`)
 
 | Key | Default | Meaning |

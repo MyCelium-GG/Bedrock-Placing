@@ -40,7 +40,7 @@ import net.minecraft.world.level.Level;
 public final class BedrockPlacingMod {
     public static final String ID = "bedrockplacing";
 
-    public static final ModMetadata META = ModMetadata.builder(ID, "BedrockPlacing", "1.1.1")
+    public static final ModMetadata META = ModMetadata.builder(ID, "BedrockPlacing", "1.1.2")
             .author("MyCelium")
             .website("https://www.curseforge.com/minecraft/mc-mods/bedrock-placing")
             .updateUrl("https://wiki.mycelium-gg.org/updates/bedrockplacing.json")
@@ -85,13 +85,14 @@ public final class BedrockPlacingMod {
         repeatTicks = builder.intValue("repeatTicks", 2, 1, 4,
                 "Client ticks between assisted placements while holding right-click (vanilla uses 4).");
         config = builder.build();
+        PlacingStats.start();
 
         assistPacket = PacketDefinition.toServer(AssistPlacePacket.TYPE, AssistPlacePacket.CODEC,
                 (packet, ctx) -> {
                     ServerPlayer sender = ctx.sender();
-                    if (sender != null) {
-                        tryAssist(sender,
-                                packet.offhand() ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND);
+                    if (sender != null && tryAssist(sender,
+                            packet.offhand() ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND)) {
+                        PlacingStats.path("via_packet");
                     }
                 });
         // Optional on every loader (Mycel 1.4.0+): on a server without the
@@ -146,6 +147,9 @@ public final class BedrockPlacingMod {
             return InteractionResult.PASS;
         }
         boolean placed = tryAssist(serverPlayer, hand);
+        if (placed) {
+            PlacingStats.path("via_click");
+        }
         return placed ? InteractionResult.SUCCESS : InteractionResult.PASS;
     }
 
