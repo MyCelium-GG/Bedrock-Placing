@@ -1,81 +1,32 @@
-# BedrockPlacing
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/header.svg" alt="BedrockPlacing" width="100%">
+</p>
 
-Never aim at the edge again. Stand on a block, look straight ahead and
-right-click the air: the block is placed on the side of the floor you stand
-on, in the direction you face — just like Bedrock (Education) placing.
-A white outline previews exactly which cell will be filled, and holding
-right-click bridges fast without vanilla's sluggish repeat delay.
+<p align="center">
+  <a href="https://www.curseforge.com/minecraft/mc-mods/bedrock-placing"><img src="https://img.shields.io/curseforge/dt/1736631?style=flat-square&logo=curseforge&logoColor=white&label=downloads&color=F16436" alt="CurseForge downloads"></a>
+  <a href="https://www.curseforge.com/minecraft/mc-mods/bedrock-placing/files"><img src="https://img.shields.io/badge/Minecraft-26.1%20--%2026.3-62B47A?style=flat-square" alt="Minecraft 26.1 to 26.3"></a>
+  <img src="https://img.shields.io/badge/loaders-Fabric%2C%20Forge%2C%20NeoForge-1E88E5?style=flat-square" alt="Fabric, Forge, NeoForge">
+  <img src="https://img.shields.io/badge/side-server%20only-8E44AD?style=flat-square" alt="Server only">
+  <img src="https://img.shields.io/badge/Java-25-E76F00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 25">
+  <a href="https://www.curseforge.com/minecraft/mc-mods/mycel"><img src="https://img.shields.io/badge/requires-Mycel-F16436?style=flat-square&logo=curseforge&logoColor=white" alt="Requires Mycel"></a>
+  <a href="https://wiki.mycelium-gg.org/bedrockplacing/"><img src="https://img.shields.io/badge/docs-wiki-0A7BBB?style=flat-square" alt="Docs on the wiki"></a>
+  <a href="https://github.com/MyCelium-GG/Bedrock-Placing/blob/main/LICENSE"><img src="https://img.shields.io/github/license/MyCelium-GG/Bedrock-Placing?style=flat-square&color=F2C14E" alt="License"></a>
+</p>
 
-Built on [Mycel](https://github.com/MyCelium-GG/MyCel-Lib) (`my.celium.org`), the shared
-core for the MyCelium ecosystem — config, platform abstraction, networking
-and diagnostics are reused.
+![About the mod](https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/about-the-mod.svg)
 
-| | |
-|---|---|
-| Mod id | `bedrockplacing` |
-| Minecraft | **26.3**, **26.2**, **26.1** (26.1-26.1.2) · Java **25** |
-| Loaders | Fabric, Forge, NeoForge |
+<img src="https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/about.svg" alt="BedrockPlacing Stand on a block, look straight ahead and right-click the air: the block is placed on the side of the floor you stand on, in the direction you face — just like Bedrock (Education) placing. A white outline previews exactly which cell will be filled, and holding right-click bridges fast without vanilla's sluggish repeat delay." width="100%">
 
-## Behavior
+![Behavior](https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/behavior.svg)
 
-- Right-click the **air** (nothing targeted) with any block in hand while
-  standing on a block: one block is placed on the anchor's side you face.
-- The anchor is the solid block under your feet — or one cell behind under
-  your feet if you already walked past the edge and are falling — so
-  forward-bridging just works while walking.
-- **Same-layer lock:** the assist only ever extends the layer you stand on.
-  The layer locks from the block under your feet; airborne placements (walked
-  off the edge) must target that same layer. Jumping or falling can never
-  strand a block a layer above or below your floor — building a flat floor at
-  Y=0 stays at Y=0. Stepping onto a new height re-locks instantly, and a stale
-  lock (5s idle, dimension change) re-locks leniently on next use, so the mod
-  never goes mysteriously silent.
-- A **preview outline** marks the candidate cell before you click (client
-  side, drawn through vanilla's gizmo pipeline — no shaders, no per-loader
-  render code).
-- **Fast repeat:** the modded client notifies the server the tick the use key
-  goes down, then at most every `repeatTicks` while held — bridging no longer
-  waits on vanilla's 4-tick use repeat. Single clicks are unaffected in speed
-  (one server round trip, like any placement).
-- Placement goes through vanilla's own state-for-placement path, so stairs
-  orient, buttons attach and waterlogging behave exactly like a normal click.
-- Server-authoritative: the server re-validates every request and drops
-  same-tick duplicates between the fast packet and the vanilla air-click
-  event, so a click never places twice. Works in multiplayer out of the box
-  (vanilla clients fall back to the normal air-click path).
-- Never places into the cells your own body occupies; dead, removed and
-  spectator players place nothing.
+<img src="https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/behavior-box.svg" alt="Right-click the air (nothing targeted) with any block in hand while standing on a block: one block is placed on the anchor's side you face. The anchor is the solid block under your feet — or one cell behind under your feet if you already walked past the edge and are falling — so forward-bridging just works while walking. Same-layer lock: The assist only ever extends the layer you stand on. The lay" width="100%">
 
-## Anonymous stats
+![Anonymous stats](https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/anonymous-stats.svg)
 
-Bedrock Placing sends anonymous stats (how many blocks get bridged, with which blocks, the settings, and errors in its own code) to its FastStats project through
-Mycel. It follows Mycel's choice exactly: the one-time screen in your own
-game, `shareStats` / `shareErrors` in `config/mycel.json` on servers.
-Details: https://wiki.mycelium-gg.org/privacy#stats-bedrockplacing
+<img src="https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/anonymous-stats-box.svg" alt="Bedrock Placing sends anonymous stats (how many blocks get bridged, with which blocks, the settings, and errors in its own code) to its FastStats project through Mycel. It follows Mycel's choice exactly: the one-time screen in your own game, shareStats / shareErrors in config/mycel.json on servers." width="100%">
 
-## Configuration (`config/bedrockplacing.json`)
+![Configuration](https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/configuration.svg)
 
-| Key | Default | Meaning |
-|---|---|---|
-| `enabled` | `true` | Master switch (also toggleable live via `Mycel.setEnabled`). |
-| `sneakDisables` | `true` | Hold sneak to skip the assist and right-click air normally. |
-| `requireSupport` | `true` | Anchor must have a sturdy side face in your direction. |
-| `reach` | `4.5` | Maximum eye-to-target distance in blocks (2-6). |
-| `preview` | `true` | Show the white placement outline (client side). |
-| `repeatTicks` | `2` | Client ticks between assisted placements while holding right-click, 1-4 (vanilla uses 4). |
+<img src="https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/configuration-table.svg" alt="Configuration table: enabled, true, Master switch (also toggleable live via Mycel.setEnabled).; sneakDisables, true, Hold sneak to skip the assist and right-click air normally.; requireSupport, true, Anchor must have a sturdy side face in your direction.; reach, 4.5, Maximum eye-to-target distance in blocks (2-6).; preview, true, Show the white placement outline (client side).; repeatTicks, 2, Client ticks between ass" width="100%">
 
-Reload live with `/mycel reload bedrockplacing`. A config screen is
-available from the mod list on Forge and NeoForge.
-
-## Building
-
-JDK 25, then:
-
-```sh
-./gradlew build            # all loaders + tests
-./gradlew :common:test     # unit tests only
-```
-
-Mycel itself comes from [JitPack](https://jitpack.io/#MyCelium-GG/MyCel-Lib)
-as one universal jar for all loaders
-(the version is `mycel_version` in `gradle.properties`). No local setup needed.
+<img src="https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/configuration-box.svg" alt="Reload live with /mycel reload bedrockplacing. A config screen is available from the mod list on Forge and NeoForge." width="100%">
