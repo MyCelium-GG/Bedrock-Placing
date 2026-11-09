@@ -13,6 +13,8 @@
   <a href="https://github.com/MyCelium-GG/Bedrock-Placing/blob/main/LICENSE"><img src="https://img.shields.io/github/license/MyCelium-GG/Bedrock-Placing?style=flat-square&color=F2C14E" alt="License"></a>
 </p>
 
+<a href="https://www.curseforge.com/minecraft/mc-mods/mycel"><img src="https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/c02bdb861f2d/docs/img/banners/mycel-required.svg" alt="Mycel is required: this mod needs the Mycel library to run. Install Mycel next to it, for the same Minecraft version and loader. Download it from CurseForge." width="100%"></a>
+
 ![About the mod](https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/about-the-mod.svg)
 
 <img src="https://raw.githubusercontent.com/MyCelium-GG/Bedrock-Placing/854c7f159617/docs/img/banners/about.svg" alt="BedrockPlacing Stand on a block, look straight ahead and right-click the air: the block is placed on the side of the floor you stand on, in the direction you face — just like Bedrock (Education) placing. A white outline previews exactly which cell will be filled, and holding right-click bridges fast without vanilla's sluggish repeat delay." width="100%">
