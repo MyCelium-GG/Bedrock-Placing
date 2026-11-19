@@ -1,0 +1,16 @@
+{
+  "bedrockplacing.missing_mycel": "Brakuje Mycel. %s potrzebuje biblioteki Mycel i pozostaje wyłączony, dopóki jej nie zainstalujesz.",
+  "bedrockplacing.missing_mycel.download": "[Pobierz Mycel]",
+  "bedrockplacing.config.enabled": "Stawianie w powietrzu",
+  "bedrockplacing.config.enabled.desc": "Czy stawianie kliknięciem w powietrze, jak w Bedrock, jest włączone.",
+  "bedrockplacing.config.sneakDisables": "Kucanie wyłącza",
+  "bedrockplacing.config.sneakDisables.desc": "Czy kucanie pomija pomoc (kucnij, by klikać w powietrze normalnie).",
+  "bedrockplacing.config.requireSupport": "Wymaga solidnego bloku",
+  "bedrockplacing.config.requireSupport.desc": "Czy blok pod tobą musi mieć solidną ścianę boczną.",
+  "bedrockplacing.config.reach": "Zasięg",
+  "bedrockplacing.config.reach.desc": "Maksymalna odległość w blokach od oczu do celu.",
+  "bedrockplacing.config.preview": "Podgląd obrysu",
+  "bedrockplacing.config.preview.desc": "Czy obrysować miejsce, gdzie stanie blok (po stronie klienta).",
+  "bedrockplacing.config.repeatTicks": "Opóźnienie powtarzania",
+  "bedrockplacing.config.repeatTicks.desc": "Ticki klienta między postawieniami przy wciśniętym prawym przycisku (vanilla: 4)."
+}

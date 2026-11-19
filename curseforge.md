@@ -14,6 +14,8 @@ Never aim at the edge again. Stand on a block, look straight ahead and right-cli
 
 Install it on both client and server. Vanilla clients can still join and place blocks the normal way.
 
+In 11 languages: English, German, Spanish, French, Dutch, Brazilian Portuguese, Russian, Polish, Italian, Japanese and Simplified Chinese.
+
 Requires [Mycel](https://www.curseforge.com/minecraft/mc-mods/mycel): install it alongside this mod. Minecraft 26.1, 26.2 and 26.3 on Fabric, Forge and NeoForge, Java 25. On Fabric you also need Fabric API.
 
 Every setting and command is on the [wiki](https://wiki.mycelium-gg.org/bedrockplacing/).

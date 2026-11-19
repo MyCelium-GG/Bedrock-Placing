@@ -1,0 +1,16 @@
+{
+  "bedrockplacing.missing_mycel": "Manca Mycel. %s ha bisogno della libreria Mycel e resta spenta finché non la installi.",
+  "bedrockplacing.missing_mycel.download": "[Scarica Mycel]",
+  "bedrockplacing.config.enabled": "Piazzamento nel vuoto",
+  "bedrockplacing.config.enabled.desc": "Se il piazzamento cliccando nel vuoto, come in Bedrock, è attivo.",
+  "bedrockplacing.config.sneakDisables": "Accovacciarsi lo disattiva",
+  "bedrockplacing.config.sneakDisables.desc": "Se accovacciarsi salta l'aiuto (accovacciati per cliccare nel vuoto normalmente).",
+  "bedrockplacing.config.requireSupport": "Serve un blocco solido",
+  "bedrockplacing.config.requireSupport.desc": "Se il blocco sotto di te deve avere una faccia laterale solida.",
+  "bedrockplacing.config.reach": "Portata",
+  "bedrockplacing.config.reach.desc": "Distanza massima in blocchi tra gli occhi e il bersaglio.",
+  "bedrockplacing.config.preview": "Contorno di anteprima",
+  "bedrockplacing.config.preview.desc": "Se evidenziare il punto in cui verrebbe piazzato il blocco (lato client).",
+  "bedrockplacing.config.repeatTicks": "Ritardo di ripetizione",
+  "bedrockplacing.config.repeatTicks.desc": "Tick del client tra due piazzamenti tenendo premuto il tasto destro (vanilla: 4)."
+}

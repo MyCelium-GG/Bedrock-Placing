@@ -1,0 +1,16 @@
+{
+  "bedrockplacing.missing_mycel": "Mycel fehlt. %s braucht die Mycel-Bibliothek und bleibt aus, bis sie installiert ist.",
+  "bedrockplacing.missing_mycel.download": "[Mycel herunterladen]",
+  "bedrockplacing.config.enabled": "Platzieren in der Luft",
+  "bedrockplacing.config.enabled.desc": "Ob das Platzieren mit Klick in die Luft wie in der Bedrock Edition aktiv ist.",
+  "bedrockplacing.config.sneakDisables": "Schleichen schaltet es aus",
+  "bedrockplacing.config.sneakDisables.desc": "Ob Schleichen die Hilfe überspringt (beim Schleichen ist ein Rechtsklick in die Luft normal).",
+  "bedrockplacing.config.requireSupport": "Braucht festen Block",
+  "bedrockplacing.config.requireSupport.desc": "Ob der Block unter dir eine feste Seitenfläche haben muss.",
+  "bedrockplacing.config.reach": "Reichweite",
+  "bedrockplacing.config.reach.desc": "Größter Abstand vom Auge zum Ziel in Blöcken.",
+  "bedrockplacing.config.preview": "Vorschau-Umriss",
+  "bedrockplacing.config.preview.desc": "Ob die Stelle, an die der Block käme, umrandet wird (auf dem Client).",
+  "bedrockplacing.config.repeatTicks": "Wiederholungs-Verzögerung",
+  "bedrockplacing.config.repeatTicks.desc": "Client-Ticks zwischen zwei Platzierungen bei gehaltener rechter Maustaste (Vanilla: 4)."
+}

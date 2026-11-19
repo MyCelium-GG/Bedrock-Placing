@@ -1,0 +1,16 @@
+{
+  "bedrockplacing.missing_mycel": "Mycel ontbreekt. %s heeft de Mycel-bibliotheek nodig en blijft uit tot die is geïnstalleerd.",
+  "bedrockplacing.missing_mycel.download": "[Mycel downloaden]",
+  "bedrockplacing.config.enabled": "Plaatsen in de lucht",
+  "bedrockplacing.config.enabled.desc": "Of plaatsen door in de lucht te klikken, zoals in Bedrock, aan staat.",
+  "bedrockplacing.config.sneakDisables": "Sluipen schakelt het uit",
+  "bedrockplacing.config.sneakDisables.desc": "Of sluipen de hulp overslaat (sluip om normaal in de lucht te rechtsklikken).",
+  "bedrockplacing.config.requireSupport": "Vast blok nodig",
+  "bedrockplacing.config.requireSupport.desc": "Of het blok onder je een stevige zijkant moet hebben.",
+  "bedrockplacing.config.reach": "Bereik",
+  "bedrockplacing.config.reach.desc": "Maximale afstand in blokken van je ogen tot het doel.",
+  "bedrockplacing.config.preview": "Voorbeeldomtrek",
+  "bedrockplacing.config.preview.desc": "Of de plek waar het blok zou komen wordt omlijnd (op de client).",
+  "bedrockplacing.config.repeatTicks": "Herhaalvertraging",
+  "bedrockplacing.config.repeatTicks.desc": "Client-ticks tussen plaatsingen terwijl je rechts ingedrukt houdt (vanilla: 4)."
+}

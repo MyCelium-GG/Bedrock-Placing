@@ -19,6 +19,16 @@ import net.minecraftforge.fml.loading.FMLEnvironment;
 @Mod(BedrockPlacingMod.ID)
 public final class BedrockPlacingForge {
     public BedrockPlacingForge(@SuppressWarnings("unused") FMLJavaModLoadingContext context) {
+        if (!net.minecraftforge.fml.ModList.isLoaded("mycel")) {
+            my.celium.org.bedrockplacing.MissingMycel.logOnce();
+            net.minecraftforge.event.entity.player.PlayerEvent.PlayerLoggedInEvent.BUS.addListener(event -> {
+                if (event.getEntity() instanceof net.minecraft.server.level.ServerPlayer player) {
+                    my.celium.org.bedrockplacing.MissingMycel.tell(player);
+                }
+            });
+            return;
+        }
+        my.celium.org.bedrockplacing.ModGate.open();
         BedrockPlacingMod.init();
         PlayerInteractEvent.RightClickItem.BUS.addListener(this::onRightClickItem);
         if (FMLEnvironment.dist == Dist.CLIENT) {

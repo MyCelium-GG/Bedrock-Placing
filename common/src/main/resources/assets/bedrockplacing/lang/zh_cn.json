@@ -1,0 +1,16 @@
+{
+  "bedrockplacing.missing_mycel": "缺少 Mycel。%s 需要 Mycel 库才能运行，安装前不会生效。",
+  "bedrockplacing.missing_mycel.download": "[下载 Mycel]",
+  "bedrockplacing.config.enabled": "空中放置",
+  "bedrockplacing.config.enabled.desc": "是否启用基岩版式的空中点击放置。",
+  "bedrockplacing.config.sneakDisables": "潜行时关闭",
+  "bedrockplacing.config.sneakDisables.desc": "潜行时是否跳过辅助（按住潜行可正常右键空中）。",
+  "bedrockplacing.config.requireSupport": "需要支撑方块",
+  "bedrockplacing.config.requireSupport.desc": "脚下的方块是否必须有坚固的侧面。",
+  "bedrockplacing.config.reach": "距离",
+  "bedrockplacing.config.reach.desc": "从眼睛到目标的最大距离（格）。",
+  "bedrockplacing.config.preview": "预览轮廓",
+  "bedrockplacing.config.preview.desc": "是否描出方块将放置的位置（客户端）。",
+  "bedrockplacing.config.repeatTicks": "连续放置间隔",
+  "bedrockplacing.config.repeatTicks.desc": "按住右键时两次放置之间的客户端刻数（原版为 4）。"
+}

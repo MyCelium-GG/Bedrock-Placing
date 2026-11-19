@@ -22,6 +22,17 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 public final class BedrockPlacingNeoForge {
     public BedrockPlacingNeoForge(@SuppressWarnings("unused") IEventBus modBus,
             @SuppressWarnings("unused") ModContainer container) {
+        if (!net.neoforged.fml.ModList.get().isLoaded("mycel")) {
+            my.celium.org.bedrockplacing.MissingMycel.logOnce();
+            NeoForge.EVENT_BUS.addListener(
+                    (net.neoforged.neoforge.event.entity.player.PlayerEvent.PlayerLoggedInEvent event) -> {
+                if (event.getEntity() instanceof net.minecraft.server.level.ServerPlayer player) {
+                    my.celium.org.bedrockplacing.MissingMycel.tell(player);
+                }
+            });
+            return;
+        }
+        my.celium.org.bedrockplacing.ModGate.open();
         BedrockPlacingMod.init();
         NeoForge.EVENT_BUS.addListener(this::onRightClickItem);
         if (FMLEnvironment.getDist() == Dist.CLIENT) {

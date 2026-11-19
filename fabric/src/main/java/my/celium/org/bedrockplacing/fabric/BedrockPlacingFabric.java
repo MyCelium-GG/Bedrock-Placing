@@ -13,6 +13,13 @@ import net.fabricmc.fabric.api.event.player.UseItemCallback;
 public final class BedrockPlacingFabric implements ModInitializer {
     @Override
     public void onInitialize() {
+        if (!net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("mycel")) {
+            my.celium.org.bedrockplacing.MissingMycel.logOnce();
+            net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents.JOIN.register(
+                    (handler, sender, server) -> my.celium.org.bedrockplacing.MissingMycel.tell(handler.getPlayer()));
+            return;
+        }
+        my.celium.org.bedrockplacing.ModGate.open();
         BedrockPlacingMod.init();
         // The packet may be registered after Mycel's own entrypoint ran.
         FabricNetworking.flush();

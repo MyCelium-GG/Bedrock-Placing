@@ -1,0 +1,16 @@
+{
+  "bedrockplacing.missing_mycel": "Falta Mycel. %s necesita la biblioteca Mycel para funcionar y seguirá desactivado hasta que la instales.",
+  "bedrockplacing.missing_mycel.download": "[Descargar Mycel]",
+  "bedrockplacing.config.enabled": "Colocación en el aire",
+  "bedrockplacing.config.enabled.desc": "Si la colocación al hacer clic en el aire, como en Bedrock, está activa.",
+  "bedrockplacing.config.sneakDisables": "Agacharse lo desactiva",
+  "bedrockplacing.config.sneakDisables.desc": "Si al agacharte se omite la ayuda (agáchate para hacer clic derecho en el aire de forma normal).",
+  "bedrockplacing.config.requireSupport": "Requiere bloque sólido",
+  "bedrockplacing.config.requireSupport.desc": "Si el bloque bajo tus pies debe tener una cara lateral sólida.",
+  "bedrockplacing.config.reach": "Alcance",
+  "bedrockplacing.config.reach.desc": "Distancia máxima en bloques entre tus ojos y el objetivo.",
+  "bedrockplacing.config.preview": "Contorno de vista previa",
+  "bedrockplacing.config.preview.desc": "Si se marca el hueco donde se colocaría el bloque (en el cliente).",
+  "bedrockplacing.config.repeatTicks": "Retraso de repetición",
+  "bedrockplacing.config.repeatTicks.desc": "Ticks del cliente entre colocaciones mientras mantienes el clic derecho (vanilla usa 4)."
+}

@@ -1,0 +1,16 @@
+{
+  "bedrockplacing.missing_mycel": "Mycel がありません。%s は Mycel ライブラリが必要で、インストールされるまで動作しません。",
+  "bedrockplacing.missing_mycel.download": "[Mycel をダウンロード]",
+  "bedrockplacing.config.enabled": "空中設置",
+  "bedrockplacing.config.enabled.desc": "Bedrock 版のように空中クリックで設置できるかどうか。",
+  "bedrockplacing.config.sneakDisables": "スニークで無効",
+  "bedrockplacing.config.sneakDisables.desc": "スニーク中は補助しないかどうか（スニークで通常の空中右クリック）。",
+  "bedrockplacing.config.requireSupport": "支えのブロックが必要",
+  "bedrockplacing.config.requireSupport.desc": "足元のブロックの側面がしっかりしている必要があるかどうか。",
+  "bedrockplacing.config.reach": "届く距離",
+  "bedrockplacing.config.reach.desc": "目から設置先までの最大距離（ブロック）。",
+  "bedrockplacing.config.preview": "プレビュー枠",
+  "bedrockplacing.config.preview.desc": "設置される位置を枠で示すかどうか（クライアント側）。",
+  "bedrockplacing.config.repeatTicks": "連続設置の間隔",
+  "bedrockplacing.config.repeatTicks.desc": "右クリック長押し中の設置間隔（クライアントティック、バニラは 4）。"
+}

@@ -12,6 +12,9 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 public final class BedrockPlacingFabricClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        if (!net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("mycel")) {
+            return;
+        }
         FabricNetworking.flushClient();
         ClientTickEvents.END_CLIENT_TICK.register(BedrockPlacingClient::clientTick);
     }

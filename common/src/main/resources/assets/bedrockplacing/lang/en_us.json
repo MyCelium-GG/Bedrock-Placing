@@ -1,0 +1,16 @@
+{
+  "bedrockplacing.missing_mycel": "Mycel is missing. %s needs the Mycel library to work and stays off until it is installed.",
+  "bedrockplacing.missing_mycel.download": "[Download Mycel]",
+  "bedrockplacing.config.enabled": "Air placement",
+  "bedrockplacing.config.enabled.desc": "Whether Bedrock-style air-click placement is active.",
+  "bedrockplacing.config.sneakDisables": "Sneak turns it off",
+  "bedrockplacing.config.sneakDisables.desc": "Whether sneaking skips the assist (hold sneak to right-click air normally).",
+  "bedrockplacing.config.requireSupport": "Needs a solid block",
+  "bedrockplacing.config.requireSupport.desc": "Whether the anchor block under you must have a sturdy side face.",
+  "bedrockplacing.config.reach": "Reach",
+  "bedrockplacing.config.reach.desc": "Maximum eye-to-target distance in blocks for assisted placement.",
+  "bedrockplacing.config.preview": "Preview outline",
+  "bedrockplacing.config.preview.desc": "Whether to outline the block cell that would be placed (client side).",
+  "bedrockplacing.config.repeatTicks": "Repeat delay",
+  "bedrockplacing.config.repeatTicks.desc": "Client ticks between assisted placements while holding right-click (vanilla uses 4)."
+}

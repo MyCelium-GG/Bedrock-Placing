@@ -1,0 +1,16 @@
+{
+  "bedrockplacing.missing_mycel": "Mycel не установлен. %s нужна библиотека Mycel, без неё мод не работает.",
+  "bedrockplacing.missing_mycel.download": "[Скачать Mycel]",
+  "bedrockplacing.config.enabled": "Установка в воздух",
+  "bedrockplacing.config.enabled.desc": "Включена ли установка блоков кликом в воздух, как в Bedrock.",
+  "bedrockplacing.config.sneakDisables": "Приседание отключает",
+  "bedrockplacing.config.sneakDisables.desc": "Пропускать ли помощь при приседании (присядьте, чтобы кликать в воздух как обычно).",
+  "bedrockplacing.config.requireSupport": "Нужен твёрдый блок",
+  "bedrockplacing.config.requireSupport.desc": "Должен ли блок под вами иметь прочную боковую грань.",
+  "bedrockplacing.config.reach": "Дальность",
+  "bedrockplacing.config.reach.desc": "Максимальное расстояние в блоках от глаз до цели.",
+  "bedrockplacing.config.preview": "Контур предпросмотра",
+  "bedrockplacing.config.preview.desc": "Обводить ли место, куда встанет блок (на клиенте).",
+  "bedrockplacing.config.repeatTicks": "Задержка повтора",
+  "bedrockplacing.config.repeatTicks.desc": "Тики клиента между установками при зажатой правой кнопке (в ванилле 4)."
+}

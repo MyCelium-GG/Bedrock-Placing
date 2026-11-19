@@ -1,0 +1,16 @@
+{
+  "bedrockplacing.missing_mycel": "Mycel est manquant. %s a besoin de la bibliothèque Mycel et reste désactivé tant qu'elle n'est pas installée.",
+  "bedrockplacing.missing_mycel.download": "[Télécharger Mycel]",
+  "bedrockplacing.config.enabled": "Placement dans le vide",
+  "bedrockplacing.config.enabled.desc": "Si le placement en cliquant dans le vide, comme sur Bedrock, est actif.",
+  "bedrockplacing.config.sneakDisables": "S'accroupir le désactive",
+  "bedrockplacing.config.sneakDisables.desc": "Si s'accroupir désactive l'aide (accroupi, le clic droit dans le vide est normal).",
+  "bedrockplacing.config.requireSupport": "Bloc solide requis",
+  "bedrockplacing.config.requireSupport.desc": "Si le bloc sous vous doit avoir une face latérale solide.",
+  "bedrockplacing.config.reach": "Portée",
+  "bedrockplacing.config.reach.desc": "Distance maximale en blocs entre vos yeux et la cible.",
+  "bedrockplacing.config.preview": "Contour d'aperçu",
+  "bedrockplacing.config.preview.desc": "Si l'emplacement où le bloc serait placé est encadré (côté client).",
+  "bedrockplacing.config.repeatTicks": "Délai de répétition",
+  "bedrockplacing.config.repeatTicks.desc": "Ticks client entre deux placements en maintenant le clic droit (vanilla : 4)."
+}
